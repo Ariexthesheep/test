@@ -50,12 +50,12 @@ void mergeSort(vector<int>& arr, int left, int right) {
 int main() {
     vector<int> arr;
     string input;
-    int number;
+    int n;
 
     getline(cin, input);
     istringstream iss(input);
-    while (iss >> number) {
-        arr.push_back(number);
+    while (iss >> n) {
+        arr.push_back(n);
     }
 
     mergeSort(arr, 0, arr.size() - 1)
